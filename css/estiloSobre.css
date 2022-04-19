@@ -1,0 +1,52 @@
+/* 
+    Created on : 14/02/2018, 19:10:18
+    Author     : Daiane
+*/
+
+#sobreDoc {
+    font-family: "Brandon Text";
+}
+
+#sobreDoc h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #b3a89d;
+    letter-spacing: 0.3em;
+}
+
+#sobreDoc p {
+    color: #424242;
+}
+
+#sobreDoc address {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #d6cfc8;
+    padding: 5%;
+}
+
+address img {
+   width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.flexColuna {
+    display: inline-flex;
+    width: 100%;
+}
+
+#sobreDoc ul, #sobreDoc li {
+    display: block;
+    font-style: normal;
+}
+
+address li {
+    padding-top: 2%;
+    letter-spacing: 0.3em;
+}
+
+#nomePl {
+    font-weight: bolder;
+}
+

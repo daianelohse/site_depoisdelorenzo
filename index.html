@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Depois de Lorenzo - Vivendo e aprendendo com a adrenoleucodistrofia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estiloGeral.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estiloInicio.css"/>
+        <link rel="stylesheet" type="text/css" href="css/pequeno.css" media="screen and (min-width:780px)"/>
+        <link rel="stylesheet" type="text/css" href="css/medio.css" media="screen and (min-width:900px)"/>
+        <link rel="stylesheet" type="text/css" href="css/grande.css" media="screen and (min-width:1000px)"/>
+        <script src="js/jquery.js" type="text/javascript"></script>
+		<link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+		<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+        <script src="js/eventosInicio.js" type="text/javascript"></script> 
+        <script src="http://www.youtube.com/player_api"></script>
+		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+    </head>
+    <body>
+        <div id="intro">
+
+            <div id="popUpIntro">
+            <p id="irParaSite">
+                <a href="#" onclick="fechaVideoInicial()">IR PARA O SITE</a>
+            </p>
+
+            <h1 id="carregando"> Carregando vídeo...</h1>
+	
+            <div id="videoInicial" class="embed-container">
+                <div id="player">  </div>
+            </div>
+            </div>
+            <!-- página inicial depois da exibição do vídeo -->
+            <div id="site" class="centralizar">
+                <header>
+                    <nav>
+                        <div id="menuAlinhamento">
+
+                            <ul>
+                                <li><img id="logo" src="imgs/logo.png" alt="logo"/></li>
+
+                                <li><a href="index.html">INÍCIO</a></li>
+                                <li><a href="fatos.html">O QUE É A DOENÇA?</a></li>
+                                <li><a href="sobre.html">SOBRE O DOCUMENTÁRIO</a></li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+
+
+                    <div id="fotoPrincipal">
+                        <img src="imgs/logo-inicio.png" alt="logo"/>
+                        <p>Vivendo e aprendendo <br /> com a Adrenoleucodistrofia</p>
+                    </div>
+                </header>
+
+                <main>
+
+                    
+				    <div id="citacaoInicio" class="texto">Batata</div>
+                    
+
+                    <div class="wrapper">
+                        <div id="imgInicio1" class="img" onclick="abreEntrevista('1')">
+                            <span class='description'>
+                                <span class='description_content'>Linda e Gabriel</span>
+                            </span>
+                        </div> 
+                        <div id="imgInicio2" class="img" onclick="abreEntrevista('2')">
+                            <span class='description'>
+                                <span class='description_content'>Laura e Theo</span>
+                            </span>
+                        </div>
+                        <div id="imgInicio3" class="img" onclick="abreEntrevista('3')">
+                            <span class='description'>
+                                <span class='description_content'>Rejane e Yuri</span>
+                            </span>
+                        </div>
+                        <div id="imgInicio4" class="img" onclick="abreEntrevista('4')">
+                            <span class='description'>
+                                <span class='description_content'>Eduardo e Eduardo</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div id="imgInicio5" class="img" onclick="abreEntrevista('5')">
+                            <span class='description'>
+                                <span class='description_content'>Leandro Galuski</span>
+                            </span>
+                        </div> 
+                        <div id="imgInicio6" class="img" onclick="abreEntrevista('6')">
+                            <span class='description'>
+                                <span class='description_content'>Patrícia, Carlos e Henrique</span>
+                            </span>
+                        </div>
+                        <div id="imgInicio7" class="img" onclick="abreEntrevista('7')">
+                            <span class='description'>
+                                <span class='description_content'>Em breve</span>
+                            </span>
+                        </div>
+                        <div id="imgInicio8" class="img" onclick="abreEntrevista('8')">
+                            <span class='description'>
+                                <span class='description_content'>Em breve</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="popUp" class="modal">
+                        <div class="modal-body">
+                            <div id="pessoa1" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('1')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('8')">&lt;</span>
+                                    <span class="nome">Linda e Gabriel</span>
+                                    <span class="proximo" onclick="proximo('2')">&gt;</span>
+									<span id='topo1'></span>
+                                </div>
+                                <div id="e1" class="embed-container"><div id="playerEntrevista1"></div></div>
+								
+
+									<div id="DivPopUp">
+									<p> </p>
+									
+										
+										<p>Gabriel Franco Machado nasceu saudável, sem complicações e se desenvolveu como qualquer criança. Sempre gostou de jogar futebol, correr, ir pra escola e, principalmente, viajar. A mãe, Linda Franco, aproveitava as férias e os feriados para levar ele pra praia – se ficassem em casa, a agitação dele não deixava ninguém em paz.</p>
+										 
+										<p class="declaracao"> “<span class="soundcite" data-id="459796728" data-start="0" data-end="20089" data-plays="1">Tudo normal. Foi uma gravidez</span> dentro dos padrões. Gabriel nasceu saudável, desenvolveu como uma criança qualquer. Gostava de... nossa... ele gostava de tanta coisa... Principalmente de viajar, ele adorava viajar. E a família do pai mora em Niterói, então a gente, nas férias e feriados, muitas vezes a gente ia viajar e ele adorava. Eu lembro que era uma das coisas que ele mais gostava.” </p>
+										 
+										<p> Em 2006, ele foi morar com o pai em Niterói, no Rio de Janeiro. Dois anos depois, pediu para voltar pra casa da mãe, em Curitiba. </p>
+										 
+										<p class="declaracao"> <span class="soundcite" data-id="459796725" data-start="0" data-end="18626" data-plays="1">"Ele veio nas férias de Reveillon passar um tempo comigo</span> disse que não queria mais voltar. Aí eu falei "ah, então agora você vai ficar com a mãe né". E tudo foi assim preparado, tudo guiado, porque nesse ano foi o ano que ele começou a desenvolver os sintomas de uma doença. </p>
+										 
+										<p> Linda Franco nunca tinha tido contato com uma doença rara antes. Aliás, demorou muito tempo até descobrir que a doença do seu filho era rara. Infelizmente, o diagnóstico foi tardio. Os sintomas começaram a ser notados na escola. Uma reunião com a diretora aqui, outra com a professora ali, todas reclamando do comportamento agitado do Gabriel, que foi encaminhado para uma psicopedagoga. Oito sessões depois e o resultado: nada de errado. </p>
+										 
+										<p> Nesse momento, Linda notou algo diferente no comportamento do filho. Ele ficava muito tempo parado olhando pra cima. Ela resolveu levar o menino para uma consulta com um oftalmologista. O médico receitou óculos, mas aconselhou a mãe a procurar um neurologista porque alguma coisa não estava certa. </p>
+										 
+										<p> Lá foi ela para o terceiro profissional da saúde – isso já em abril de 2009. A neuropediatra pediu alguns exames, disse que ia estudar o caso e nunca mais entrou em contato. Foi nesse momento que Linda entrou na internet e foi pesquisar sobre o resultado da ressonância – uma “leucodistrofia metacromática”. Ela mandou e-mails para diversos lugares no Brasil todo pedindo ajuda, mas foi um médico de Curitiba mesmo que respondeu. Ele atendeu o Gabriel e o encaminhou  para um geneticista. </p>
+										 
+										<p class="declaracao"> <span class="soundcite" data-id="459796746" data-start="0" data-end="10501" data-plays="1">"Eu não sabia da gravidade da doença.</span> Eu ficava dentro de casa 25 dias, 30 dias, esperando a consulta com o neuropediatra por falta de informação mesmo. </p>
+										 
+										<p> Nessa época, o Gabriel já tinha muita dificuldade pra andar e já estava praticamente cego. O médico o examinou dentro do carro e na hora o encaminhou  para a médica. Mara Lúcia Schmitz, referência em doenças raras no Brasil. </p>
+										 
+										<div id="e1" class="embed-container"> <p><iframe width="640" height="390" src="https://www.youtube.com/embed/YuVw6v60IrY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>										 
+										
+										<p> Outro sintoma que passou em branco também foi a cor da pele do Gabriel. Em relação aos pais, a pele dele era muito bronzeada. A mãe acreditou que era por conta do período que ele passou em Niterói, mas já era um sintoma da doença. </p>
+										 
+										<p class="declaracao"><span class="soundcite" data-id="459796743" data-start="0" data-end="15465" data-plays="1">“Cheguei no consultório dela, mais</span> uma hora de espera e o Gabriel muito agitado no consultório. Quando ela viu o Gabriel, quando ela olhou a ressonância, ela já disse de cara: "Não, mãe, é adrenoleucodistrofia. E daqui você vai direto pro Hospital Pequeno Príncipe".” </p>
+										 
+										<p> Depois de sete profissionais da saúde, finalmente o Gabriel recebeu um diagnóstico. Adrenoleucodistrofia. Depois disso, foram direto para o Hospital Pequeno Príncipe para começar com a medicação. </p>
+										 
+										<div id="e1" class="embed-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/pEyG1Q8i60U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+										 
+										<p><h2>Sem tratamento</h2><p>
+										 
+										<p>Junto com essa notícia, chegou outra pior ainda: como a doença evoluiu muito rápido e o diagnóstico demorou, as opções de tratamento ficaram reduzidas. O transplante de medula óssea – a única cura – não pode ser feito.</p>
+										 
+										<p>Com cuidados paliativos, Linda e Gabriel ficaram internados no Hospital Pequeno Príncipe por mais de três anos. Nessa época, ele já não falava, não enxergava e não andava. Passava o tempo todo na cama. Foi só depois de entrar na justiça que eles obtiveram direito ao homecare – a continuação do tratamento dentro de casa.</p>
+										 
+										<div id="e1" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/uRUp1ezwark?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+										 
+										<p><h2>Adeus</h2><p>
+										 
+										<p>Dez anos entre o diagnóstico e a partida do Gabriel. Dez anos de luta, de angústia, de sofrimento e de muita superação. Foram dez anos sem saber o que poderia acontecer no próximo minuto. Nesse período, os aniversários deixaram de ser comemorados a cada ano – passaram a ser chamados de “mêsversários”. Mas também foram dez anos de vida que seguiu para todo mundo.</p>
+										 
+										<p class="declaracao"> <span class="soundcite" data-id="459796737" data-start="0" data-end="21342" data-plays="1">“Só que nessa fase também eu lembro</span> que eu ficava de joelho do lado da cama chorando, conversava com o Gabriel e pedia pra Deus levar ele. Pedia pra Deus levar. Só que dai em contrapartida eu pensava assim "Aí, e se deus ouvir meu pedido e levar meu filho?". Então eu tinha medo de deitar do lado da cama dele e dormir e ele morrer.” </p>
+										 
+										<p>Depois que uma pessoa não consegue mais se alimentar por conta própria, pode ser feito um procedimento chamado de “gastrostomia” – basicamente, é a fixação de uma sonda/cano dentro do estômago para que a comida vá direto para lá. O Gabriel fez isso em 2010. No final de 2016, a situação piorou e o estômago deixou de funcionar. Ele precisou passar por um procedimento cirúrgico mais complicado chamado de “jejunostomia”, que é quando a alimentação vai direto para o intestino. Ele teve algumas complicações e precisou ser internado novamente.</p>
+										 
+										 
+										<div id="e1" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/9MrH1h3PIZg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+										 
+										
+										<p>17 de fevereiro de 2017. Linda saiu para participar de um curso sobre luto e deixou o Gabriel com a enfermeira Devanir. Ao sair da aula, ela recebe uma ligação avisando que alguma coisa havia acontecido na casa dela.</p>
+
+										 
+										<div id="e1" class="embed-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/OJM3xITpwno?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+										 
+										 
+										<p><h2>O dom de ajudar</h2></p>
+										 
+										<p>Desde antes do diagnóstico do filho, Linda Franco já tinha um espírito caridoso e procurava ajudar o próximo, seja com doações ou com conforto. Isso foi aumentando cada vez mais com o tempo que ela precisou passar no hospital, já que conheceu diversas famílias e pacientes que estavam internados e que também precisam de apoio.</p>
+										 
+										<p class="declaracao"> <span class="soundcite" data-id="459796734" data-start="0" data-end="25522" data-plays="1">“Como eu morei três anos dentro do hospital, fui</span> conhecendo outras famílias e eu via, por exemplo, que uma criança fez uma gastrostomia, essa mãe precisava ser orientada. O filho ia precisar de um leite especial, de frascos, equipo, seringa, gaze, e essa mãe entrou no hospital e foi pega de surpresa e não conhecia nada disso. Então a gente já entrava ali pra conversar com essa mãe”.</p>
+										 
+										<p>Além das conversas acolhedoras nos corredores do hospital e dos conselhos em relação aos direitos que as mães com filhos especiais possuem, Linda aproveitou para abrir um blog e contar a história do Gabriel. No começo, a ideia era desabafar sobre o que ela estava sentindo. Porém, pouco tempo depois, ele passou a concentrar uma quantidade enorme de informações sobre adrenoleucodistrofia e também sobre outras doenças. Quando as mães do Brasil todo recebiam o diagnóstico e procuravam sobre a doença no Google, iam direto para o blog de Linda.</p>
+										 
+										<p>Com o aumento da procura e uma quantidade absurda de e-mails, ela precisou mudar de estratégia e abriu um grupo no Facebook. Foi assim que nasceu o “Troca-troca entre mães especiais”, com o objetivo de levar informações e também facilitar o acesso a alguns equipamentos ou tratamentos que faltam na rede pública. Escute a reportagem sobre o grupo:</p>
+										 
+										<p><audio controls muted id="audio">
+															<source src="reportagem.mp3" type="audio/mpeg">
+															O seu navegador não tem suporte a esse recurso.
+														</audio></p>
+							
+										 
+										<p>Junto com todo esse trabalho que desenvolveu, ela também montou o “Família ALD”. Enquanto o grupo de trocas tem como foco as pessoas com deficiências em geral, esse outro foca especialmente na adrenoleucodistrofia.</p>
+										 
+										<p>Ou seja, ela também atua na transmissão de informações e na divulgação da doença. Com palestras, seminários e ações, ela leva informação sobre a doença para congressos de medicina, universidades e também para a população em geral. O objetivo é sempre fazer com que o diagnóstico precoce aconteça.</p>
+										 
+										<p>Atualmente ela se juntou ao <a href="https://www.institutoberbigier.com.br/">Instituto Berbigier</a></li> que também possui diversas ações para ajudar os portadores de doenças raras no Brasil.</p>
+										 
+										 
+										<div id="e1" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/z9t0npLcHSU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+									
+										<p> </p>
+										
+										<p class="voltartopo"><a href='#topo1'>VOLTAR AO TOPO DO SITE</a></p>
+
+
+									</div>	
+
+
+                            </div>
+                            <div id="pessoa2" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('2')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('1')">&lt;</span>
+                                    <span class="nome">Laura e Theo</span>
+                                    <span class="proximo" onclick="proximo('3')">&gt;</span>
+									<span id='topo2'></span>
+                                </div>
+                                <div id="e2" class="embed-container"><div id="playerEntrevista2"></div></div>
+								
+								<div id="DivPopUp">
+								<p> </p>
+
+									
+									<p> Laura Pinheiro teve duas surpresas: primeiro o filho, depois a adrenoleucodistrofia. Mãe aos 18. Mãe especial aos 26. </p>
+
+									<p class="citacao"> “<span class="soundcite" data-id="459796407" data-start="0" data-end="5120" data-plays="1">É irônico até</span> porque eu não escolhi nem ter e nem ter que devolver. A escolha não é nossa, né”.  </p>
+
+									<p> Laura descobriu que estava grávida algumas semanas depois de passar no vestibular. Nessa época, ela morava sozinha em Caxias do Sul (RS). Depois do nascimento do filho, ela mudou de curso e de cidade – veio morar em Curitiba (PR) e cursar psicologia. O pequeno Theo sempre foi uma criança tranquila, amorosa e que não dava trabalho para a mãe. </p>
+
+									<p> Cuidando sozinha do filho, Laura teve alguns problemas durante o último ano de faculdade – não sobrava tempo para trabalhos, estágio obrigatório e o TCC. Para se formar, ela resolveu deixar o Theo com a avó durante a semana. Porém, isso não funcionou muito bem. Os dois choravam muito a cada nova despedida. A avó morava no interior e eles só se viam nos finais de semana.</p>
+
+									<p> <img src="imgs/laurapinheiro/FOTOGRAFIA THEO ARCO IRO.jpg" alt="Foto Theo Arco Iro" class="imagemhistoria"></p>
+
+									<p>Foi nessa transição que o primeiro sintoma da adrenoleucodistrofia começou a aparecer, mas não foi notado. O Theo deixou de ser uma criança tranquila e começou a apresentar um comportamento muito agitado e até agressivo na escola.</p>
+
+									<p class="declaracao"> “<span class="soundcite" data-id="459796401" data-start="0" data-end="22780" data-plays="1">Então a primeira alteração que ele</span> teve foi comportamental. Então todo mundo ligou essa alteração ao fato da nossa separação. Então achavam que podia ser uma questão emocional, a mudança de comportamento na escola, a agressividade e tudo.” </p>
+
+									<p>  <img src="imgs/laurapinheiro/FOTO THEO PRAIA.jpg" alt="Foto Theo Praia" class="imagemhistoria"> </p>
+
+									<p> O segundo sintoma apareceu logo depois e, como na maioria dos casos da doença, também passou despercebido. O Theo começou a ficar com a pele muito bronzeada – diferente da mãe, que tem a pele bem clara. </p>
+
+									<p class="declaracao">“<span class="soundcite" data-id="459796398" data-start="0" data-end="22467" data-plays="1">Então tinha esse sintoma</span>, que tava meio que na cara, mas ninguém podia imaginar porque a cidade da minha mãe era muito quente e ele passava muito tempo na piscina. E nas férias de dezembro nós passamos muito tempo na praia, então realmente ele tava bem mais bronzeado do que de costume.” </p>
+
+									<p> Era impossível de dizer que ele possuía alguma doença. Nessa fase, o Theo brincava, corria, andava de bicicleta e fazia tudo que uma criança deveria fazer. Mesmo assim, a escola recomendou que ele fizesse algumas sessões de acompanhamento com uma pedagoga porque seu ritmo de aprendizado estava diferente do restante da turma. </p>
+
+									<p> <img src="imgs/laurapinheiro/FOTO THEO BRINCANDO.jpg" alt="Foto Theo Brincando" class="imagemhistoria"> </p>
+
+									<p> Como estava estudando psicologia, Laura aproveitou o conhecimento e começou a tentar enquadrar o filho em algum diagnóstico porque não se contentava com a explicação de “déficit de atenção”. Porém, ela não teve tempo de fazer o diagnóstico. Um sintoma mais sério apareceu. </p>
+
+									<p class="declaracao">“<span class="soundcite" data-id="459796425" data-start="0" data-end="22937" data-plays="1">E eu fui pra Palotina passar o carnaval com ele</span> e nós fomos andar de bicicleta e ele já tinha aprendido a andar de bicicleta sem rodinha. E ele não conseguiu, ele pedalou e caiu, eu coloquei ele de novo e ele pedalou e caiu. Aí naquela hora eu falei "tá, tem alguma coisa muito séria acontecendo, muito séria".” </p>
+
+									<p> Foi depois desse episódio que ela resolveu voltar para Curitiba e levar o Theo para uma consulta com um neurologista porque percebeu que havia algo de errado. </p>
+
+									<p><div id="e2" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/SW4LHGbEUEU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></p>
+									 
+
+
+									<p><h2>Esperança</h2></p>
+
+									<p> Mesmo depois de receber essa notícia devastadora, as esperanças foram renovadas com a possibilidade de um tratamento – o transplante de medula óssea faz com que a doença não evolua mais e o paciente se cure. Para saber se a criança pode ou não fazer o transplante, existe uma medida chamada “escala de Loes”. Ela mede o grau de comprometimento do cérebro e vai do score 0 até 34. O transplante só é indicado para quem possui, no máximo, o grau 9. Acima disso, os danos no cérebro já são muito graves. </p>
+
+									<p><div id="e2" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/83_csIpimMk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div></p>
+
+									<p class="declaracao"> “<span class="soundcite" data-id="459796422" data-start="0" data-end="7445" data-plays="1">O Theo abaixou meu óculos, olhou pra mim</span> e falou "às vezes eu fico me perguntando se fui eu que nasci de você ou se foi você que nasceu de mim””. </p>
+
+									<p> Ela abandonou o estágio, a faculdade e todos os compromissos para dedicar todo o seu tempo ao Theo. Isso com apenas 26 anos. </p>
+
+									<p class="declaracao">“<span class="soundcite" data-id="459796419" data-start="0" data-end="19149" data-plays="1">Abandonei não, até porque minha vida é ele</span>. Ele é a única coisa que eu tenho no mundo. Várias pessoas às vezes olham pra mim, eu tenho 26 anos, então às vezes as mães são um pouco mais velhas. E elas ficam "nossa, você é tão nova e abandonou tudo pra ficar aqui", mas esse era o mínimo que eu podia fazer por ele.”</p>
+
+									<p> Mesmo com todas as notícias desanimadoras, ela não deixou as esperanças morrerem. Foi atrás de uma segunda opinião em São Paulo e procurou outros médicos. Depois disso, partiu para uma busca espiritual – igreja, centro espírita, candomblé, chá, passe, floral, vibracional, vela. Eram 430 gotinhas de remédio alopático por dia e mais uma alimentação especial – sem produto industrializados e gordurosos. Ela buscou de tudo um pouco para tentar curar o filho. </p>
+
+									<p class="declaracao">“<span class="soundcite" data-id="459796413" data-start="0" data-end="12930" data-plays="1">Foi uma jornada espiritual extremamente</span> importante não pra ele, mas pra mim. Porque eu fui entendendo melhor o propósito que Deus fala.” </p>
+
+									<p> Infelizmente, a doença continuou progredindo. Os sintomas físicos começaram a aparecer. Quedas bruscas, falta de atenção e, finalmente, as falhas na visão. </p>
+
+									<div id="e2" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/ARG5T_81A6I?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									
+									<p> Depois da perda visual, começaram as dificuldades para falar. Ele passou a se comunicar com a mãe por meio de gestos positivos e negativos. Quando a doença o colocou em uma cadeira de rodas e impediu que ele mexesse as mãos, a comunicação passou a ser feita por meio de piscadas. </p>
+
+									<div id="e2" class="embed-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/ij1gTZUpIgk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+
+									<p><h2>Rotina</h2></p>
+
+									<p>Sem contar as pausas para ir na academia e na terapia, Laura dedica todo o seu tempo ao Theo. A rotina deles é bem puxada. Como o menino não consegue mais comer, ele se alimenta por uma sonda que leva a comida direto para o estômago. São sete mamadeiras de leite, o que totaliza 14 horas de alimentação por dia. </p>
+
+									<p> Durante esse tempo, Laura aproveita para ler em voz alta para Theo e também para ouvir música junto com ele. Eles também passeiam pela vizinhança e visitam o parque do bairro todos os dias. </p>
+
+									<div id="e2" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/D5I-v3y7UPM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+
+									<p><h2>Tatuagens</h2></p>
+
+									<p> Laura tem duas tatuagens em homenagem ao filho. A primeira delas foi feita antes do diagnóstico e mostra as palavras “Eu te amo mamãe”, que foram escritas pelo próprio Theo. A segunda é a de uma borboleta. A borboleta é o símbolo da adrenoleucodistrofia porque, com a tomografia, o cérebro da criança mostra uma alteração que se parece com uma borboleta. </p>
+
+									<p> <img src="imgs/laurapinheiro/FOTOGRAFIA TATUAGEM THEO.jpg" alt="Foto Theo Tatuagem" class="imagemhistoria"> </p>
+
+									<div id="e2" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/-vtfS6gw_Rw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+									
+									<p> </p>
+									
+									<p class="voltartopo"><a href='#topo2'>VOLTAR AO TOPO DO SITE</a></p>
+
+								</div>
+
+                            </div>
+                            <div id="pessoa3" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('3')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('2')">&lt;</span>
+                                    <span class="nome">Rejane e Yuri</span>
+                                    <span class="proximo" onclick="proximo('4')">&gt;</span>
+									<span id='topo3'></span>
+                                </div>
+                                <div id="e3" class="embed-container"><div id="playerEntrevista3"></div></div>
+                                <div id="DivPopUp">
+								<p> </p>
+
+									
+									<p>De Recife para Curitiba, de Curitiba para Recife e, finalmente, de Recife para Brasília. Esse foi o caminho que Rejane da Luz Gomes precisou trilhar para buscar o tratamento para o filho. Yuri Lucas foi diagnosticado com adrenoleucodistrofia antes de apresentar qualquer sintoma – uma situação muito rara dentro dessa doença. Isso também fez com que ele fosse um candidato a fazer o transplante de medula óssea.</p>
+
+									<p> Porém, essa história não começa de uma maneira feliz. Antes de tudo isso, Rejane teve um sobrinho, chamado Carlos André, filho de sua irmã mais velha, que começou a apresentar os sintomas característicos da adrenoleucodistrofia: problemas na memória, agitação e problemas para enxergar. Quando o diagnóstico foi feito, era tarde demais. O sobrinho dela não pode realizar o transplante e faleceu alguns meses depois.</p>
+
+									<p class="declaracao">  “<span class="soundcite" data-id="459796896" data-start="0" data-end="27718" data-plays="1">O tratamento do filho dela começou depois que</span> o menino foi perdendo a memória, aí ele já não andava mais. Ele passou um ano e oito meses internado no hospital lá em João Pessoa. Depois de oito meses que ele passou em João Pessoa foi pra Recife. Aí foi só lá em Recife que o médico descobriu que ele tinha essa doença” </p>
+
+										<p> <img src="imgs/rejane/yuri1.jpg" alt="Yuri Praça" class="imagemhistoria"> </p>
+
+									<p>Com isso, a médica de Recife resolveu testar os dois filhos da Rejane para a doença. O resultado foi que o do Yuri deu alterado e o do outro filho deu normal. </p>
+
+									<p class="declaracao"> “<span class="soundcite" data-id="459796920" data-start="0" data-end="19959" data-plays="1">Eu fiquei muito desesperada porque eu lembrei logo do meu sobrinho</span>. Eu fiquei desesperada porque eu não imaginava que meu filho ia ter essa doença. Porque essa doença começa a se desenvolver muito rápido. Aí eu fiquei desesperada quanto eu soube que ele tinha isso também.” </p>
+
+									<p> Porém, por pior que tivesse sido a notícia, ela também apresentou um lado positivo. Como o diagnóstico foi feito antes de o Yuri apresentar sintomas, ele poderia ter a chance de realizar o transplante de medula óssea – único tratamento curativo.</p>
+
+									<p><h2>Recife para Curitiba</h2></p>
+
+									<p>Curitiba é uma das cidades referência em transplante de medula óssea para crianças, principalmente no Hospital Pequeno Príncipe, e também uma referência em doenças raras como a adrenoleucodistrofia. Portanto, os médicos de Recife encaminharam  Rejane para uma série de consultas e exames na capital paranaense.</p>
+
+									<p class="declaracao">  "<span class="soundcite" data-id="459796911" data-start="0" data-end="10606" data-plays="1">É como eu falei pra médica, né.</span> Ela falou assim: "Mãe, eu vou marcar em Curitiba pra você. Você vai?". E eu falei: "Pode ser onde for que eu vou com meu filho". O importante é que a gente consiga né, mais rápido </p>
+
+									<p>Os danos causados pela doença no cérebro e no restante do corpo são medidos em uma escala chamada de “score de Loes”. As pontuações vão de 0 até 34 e o transplante de medula óssea é feito apenas até o score 9. Isso acontece porque o tratamento não consegue reverter os danos que já foram causados, ele só previne novos danos.</p>
+
+									<p> Depois de realizados os exames, descobriram que o Yuri estava no score 4. Ou seja, ele poderia fazer o transplante. Porém, como mostramos nesse webdocumentário, a doença piora muito rapidamente. Apenas nos dois meses que Rejane ficou em Curitiba, o score de Loes já evolui para o número 7. </p>
+
+										<p> <img src="imgs/rejane/yuri2.jpg" alt="Foto Theo Arco Iro" class="imagemhistoria"> </p>
+									 
+									<p><h2>Voltar para Recife e depois para Brasília</h2></p>
+
+									<p>Infelizmente, Rejane não pode realizar o transplante em Curitiba e precisou voltar para Recife. Ela estava sozinha, apenas com o filho, enfrentando exames, consultas e o frio característico da capital paranaense. O centro de transplante não poderia receber ela nesse período – e o único doador compatível era o pai, mas apenas com 50% de compatibilidade.</p>
+
+									<p>A segunda opção foi viajar para Brasília. E lá foi ela, novamente sozinha, desbravar a capital do país. Ela chegou em fevereiro de 2018 e o Yuri precisou passar por mais uma bateria de exames.</p>
+
+									<p class="declaracao"> “<span class="soundcite" data-id="459796905" data-start="0" data-end="30748" data-plays="1">Eu pensei que quando chegasse aqui já ia iniciar o tratamento do transplante, mas não foi</span>. Eu conversei com o médico e ele falou que ele tem que fazer mais exames e que ele vai ver se daqui pro final de março consegue um doador porque o pai é só 50%. Ai se encontrasse um doador compatível com ele seria melhor.” </p>
+									 
+									<p>Porém, não foi isso que aconteceu. Em março e em abril, mais exames e nada de transplante. E o pior: sem previsão.</p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796899" data-start="0" data-end="24975" data-plays="1">Não, eles não deram nenhuma previsão.</span> Quando eu tava em Curitiba, a Dra. Mara falou que o transplante dele tinha que ser pra março. A gente já está em maio e o doutor [em Brasília] só fez mais exames. Agora eu fiz um exame e eu acho que ele está esperando o resultado do meu exame, creio eu que é pra iniciar o tratamento já.” </p>
+									 
+									<p>Até o dia 13 de junho, Yuri Lucas Gomes Alves não havia feito o transplante de medula óssea. Essa reportagem será atualizada na medida que novas informações sejam apuradas. </p>
+
+									<p>Porém, aqui fica claro um problema recorrente nos casos de adrenoleucodistrofia: a demora no tratamento. Em poucos meses, o score do Yuri aumentou de 4 para 7. O máximo possível para fazer o transplante é 9.</p>
+
+									<p>O problema também não é exclusivo dos médicos. Um transplante de medula óssea é um tratamento muito arriscado. Sem um doador compatível 100%, os problemas ficam ainda maiores. Por isso, é importante que todas as pessoas sejam doadoras de medula óssea – assim, podemos evitar que um diagnóstico precoce vira uma tragédia e podemos contribuir para salvar uma vida.</p>
+
+									<p>Para entender mais sobre como funciona o transplante, <a href="fatos.html">clique aqui</a></li>.</p>
+									
+									<p class="voltartopo"><a href='#topo3'>VOLTAR AO TOPO DO SITE</a></p>
+
+									 
+								</div>
+
+                            </div>
+                            <div id="pessoa4" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('4')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('3')">&lt;</span>
+                                    <span class="nome">Eduardo e Eduardo</span>
+                                    <span class="proximo" onclick="proximo('5')">&gt;</span>
+									<span id='topo4'></span>
+                                </div>
+                                <div id="e4" class="embed-container"><div id="playerEntrevista4"></div></div>
+                                
+								<div id="DivPopUp">
+								<p> </p>
+
+									
+									<p> Eduardo Berbigier tem 40 anos, é advogado, dono da própria firma de advocacia, fundador do Instituto Berbigier e, acima de tudo, pai. Seu filho, que também se chama Eduardo, foi diagnosticado com adrenoleucodistrofia aos 11 anos, em 2017.</p>
+									 
+									<p> Porém, com sorte, a trajetória dessa família desviou do padrão que normalmente acontece nesses casos. Eduardo, o filho, teve o diagnóstico precoce que possibilitou o tratamento. O único sintoma real que ele apresentou foi o escurecimento da pele – resultado do início da doença de Addison –, mas que veio depois da descoberta da doença.</p>
+									 
+									<div id="e4" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/lb_n8Xy8PxA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									
+									
+									
+									<p> Depois de feita a tomografia com contraste, eles foram encaminhados para o consultório da médica. Mara Lúcia Schmitz – especialista em doenças raras do Hospital Pequeno Príncipe. Mais exames, incluindo um exame de sangue específico para detectar a doença - os ácidos graxos de cadeia muito longa. No final de semana seguinte, chegou o resultado. Era adrenoleucodistrofia mesmo. </p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796113" data-start="0" data-end="15805" data-plays="1">Mas uma coisa que é incrível</span> é que isso nos pega tão de surpresa que fomos tomar um café depois jantar e eu ficava olhando pro Eduardo e pensando: "Não pode ser, tá normal, joga futebol, tem uma inteligência acima da média, deve ter algum erro"” </p>
+									 
+									<p> Porém, o que poderia se tornar mais uma notícia triste teve um desfecho diferente. Graças ao diagnóstico precoce, o pequeno Eduardo não teve lesões graves no cérebro e pode correr atrás do transplante de medula óssea – o único tratamento efetivo para a adrenoleucodistrofia.</p>
+									 
+									<p> Apena 45 dias depois do diagnóstico, ele conseguiu fazer o transplante. É um procedimento perigoso e que demora mais de um ano para que a criança possa voltar a viver uma vida normal. Mas é a cura para a doença.</p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796107" data-start="0" data-end="28476" data-plays="1">Eu costumo dizer que nós fomos muito privilegiados</span> porque tem crianças que demoram dois anos para conseguir o transplante. Na época, o SUS não fazia o transplante de medula para portadores de adreno, mas nós tínhamos um apoio muito bom do Ministério da Saúde e conseguimos em 20 dias aprovar uma portaria que vai permitir que outras crianças façam o tratamento. Então nós fomos nos inteirando do assunto e corremos, conseguimos em 45 dias desde o diagnóstico até a realização do transplante.” </p>
+									 
+									<p> Mesmo assim, a batalha não foi fácil. Eduardo não achou um doador 100% compatível e precisou realizar o transplante com seu pai, compatível em 50%. É um transplante mais arriscado e com uma chance maior de complicação, mas menos perigoso do que não realizar o tratamento. </p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796101" data-start="0" data-end="32100" data-plays="1">Então nesses 45 dias foi uma angústia</span>: "Será que vai dar o tratamento? Será que vai ser eficiente? Será que a medula vai pegar? O que vamos fazer se não der certo o transplante, qual a outra medida?". Então foi uma fase, eu diria, foi a pior. Mesmo com tudo que o Eduardo passou depois do transplante, essa foi a pior porque foi uma fase de incerteza e a gente se sente totalmente impotente porque tem que aguardar e é muito difícil isso, muito complicado.” </p>
+									 
+									<p> Depois de tudo isso, 90 dias de internação no hospital. Foram três meses de muitos altos e baixos. O Eduardo teve a chamada “doença do enxerto”, que é quando a medula transplantada rejeita o corpo. É uma doença muito séria, mas que conseguiu ser controlada com medicação. </p>
+
+									<p>Quem faz um transplante de medula óssea também fica com o sistema imunológico muito fraco, já que é a medula que produz os anticorpos. Sendo assim, qualquer vírus ou bactéria pode fazer um estrago muito grande. Ele teve diversas infecções desse tipo, mas conseguiu vencer todas elas. </p>
+									 
+									<div id="e4" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/8B3_xUsGeRA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									 
+									 
+									<p> Depois desses 90 dias, sabendo que o transplante deu certo, Eduardo pode ir para casa. É uma alta controlada. Ele precisa ficar isolado para não ter contato com microorganismos que podem causar doenças. O ambiente também é todo higienizado e ele só pode ter contato com três pessoas: o pai, a mãe e uma cuidadora.</p>
+									 
+									<p class="declaracao"> "<span class="soundcite" data-id="459796095" data-start="0" data-end="14393" data-plays="1">Ele teve alta, mas</span> é como se estivesse no hospital. Nos primeiros dias, três vezes por semana no hospital, agora é uma vez só, mas é um monitoramento contínuo. Toda semana exames de sangue pra ver como estava evoluindo a recuperação. </p>
+									 
+									<p><h2>A conversa</h2></p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796143" data-start="0" data-end="34615" data-plays="1">Um dia nós estávamos parados</span> em um condomínio com uma área verde bem grande, onde eu sempre ia praticar esportes com o Eduardo. A gente estava andando e conversando quando ele me perguntou: “Eu posso me curar ou eu vou morrer, pai?”. Isso é uma coisa muito difícil de responder. Ele me disse que sabia das consequências da doença, que tinha pesquisado tudo na internet. Que sabia que podia perder a visão, a audição. Isso foi muito impactante pra mim. Eu fiquei muito triste porque não sabia que ele conhecia tão bem a doença, que ele sabia tanto da realidade. Nesse momento, eu expliquei que ele ia superar, que ele tinha força pra isso e que felizmente o diagnóstico foi precoce. <span class="soundcite" data-id="459796149" data-start="0" data-end="11050" data-plays="1">Aí ele me falou: “Se você me disser</span> que vai ficar tudo bem, então eu acredito”. Então mesmo sem ter toda aquela convicção na época, eu me virei e disse: “Tudo vai ficar bem. Você pode ficar tranquilo que você não vai morrer”. </p>
+									 
+									<div id="e4" class="embed-container"><p><iframe width="560" height="315" src="https://www.youtube.com/embed/iWPkM8H_TZ8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									
+									<p>O pequeno Eduardo pediu uma viagem de preparação antes do transplante. Ele queria conhecer o Rio de Janeiro e também queria passear com o pai – ele ia precisar ficar cerca de um ano sem poder sair na rua para brincar. Os dois foram assistir jogos de futebol, conhecer parques, shoppings e aproveitar o Rio de Janeiro.</p>
+
+									<p class="declaracao"> “<span class="soundcite" data-id="459796140" data-start="0" data-end="15072" data-plays="1">Ele descobriu um parquinho dentro</span> de um shopping e ficava mais de seis horas por dia dentro daquele parquinho e não cansava. Eu falava: “Pô, filho, vamos embora, fazer outras coisas”. E ele respondia: “Pô, pai, eu vou ficar um ano sem poder brincar na rua, então deixa eu aproveitar”.” </p>
+
+
+									<div id="e4" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/myLAoKpHNaU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+									 
+									 
+									 
+									<p><h2>Instituto Berbigier</h2></p>
+									 
+									<p> A inspiração para criar o Instituto Berbigier veio de outras mães de pacientes de ALD. Tudo começou depois que seus filhos receberam o diagnóstico da adrenoleucodistrofia. A Dra. Mara receitou o óleo de Lorenzo, que ajuda a frear o desenvolvimento da doença. O problema: ele não é produzido no Brasil e cada unidade custa mais de mil reais. </p>
+									 
+									<p> A solução? Linda Franco, da Família ALD Brasil. Ela indicou uma mãe que estava em uma casa de apoio e que poderia compartilhar o medicamento. </p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796134" data-start="0" data-end="11938" data-plays="1">Uma pessoa simples, humilde,</span> de Minas Gerais que com todas as dificuldades aqui nos doou o medicamento e não quis nada em troca, não quis dinheiro nenhum. Então nós vemos como existe solidariedade nisso” </p>
+									 
+									<p>Foi a partir desse momento que Eduardo percebeu que “pra tudo há um propósito” e começou a pensar sobre a doença de uma maneira diferente. E assim surgiu o “Instituto Berbigier”. </p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459796128" data-start="0" data-end="20116" data-plays="1">Nós vimos a dificuldade que as famílias</span> tinham pra serem ouvidas pelo governo, pra conseguir tratamento, medicamente. Como nós temos mais acesso às autoridades e ao judiciário, eu entendi que isso era uma causa que nós deveríamos abraçar. Então nós resolvemos transformar esse impacto em uma coisa positiva.” </p>
+									 
+									<p> Atualmente, o Instituto trabalha em diversas frentes. O trabalho começa com a orientação de famílias e portadores de doenças raras, indicando o caminho correto para o diagnóstico e, posteriormente, ajudando a buscar os direitos do tratamento gratuito. Ele também age na arrecadação de dinheiro para custear os tratamentos, como remédio e equipamentos, para quem não possui condições financeiras. </p>
+									 
+									<p> Além disso, o Instituto Berbigier também ajuda as pessoas a buscarem os próprios direitos como cidadãos com acompanhamento de advogados. A Linda Franco, criadora da Família ALD, também se juntou ao Instituto para somar forças e fazer com que as informações e a ajuda cheguem a mais pessoas. </p>
+									 
+									<p> Caso você precise de ajuda ou de um aconselhamento do Instituto, é só <a href="https://www.institutoberbigier.com.br/">clicar aqui</a></li> e acessar a página do Instituto Berbigier. </p>
+									 
+									<div id="e4" class="embed-container"> <iframe width="640" height="390" src="https://www.youtube.com/embed/CF0rT_4Kklk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </div>
+									 
+									<p><h2>Diários do Edu</h2></p>
+									 
+									<p> Com o objetivo de registrar a luta da família durante todo esse período, Eduardo começou a gravar vídeo diários contando sobre o estado de saúde do seu filho e também sobre as ações que o Instituto Berbigier estava realizando para ajudar os portadores de doenças raras. </p>
+									 
+									<p> Durante mais de 120 dias, ele publicou um vídeo por dia em sua página do facebook. O objetivo também foi fazer com que as pessoas olhassem para os vídeos e sentissem a necessidade de ajudar, de alguma forma, as pessoas que passam por essa situação. </p>
+									 
+									<div id="e4" class="embed-container"><iframe width="640" height="390" src="https://www.youtube.com/embed/BH_pCcbxEUs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+									<p> </p>
+									
+									<p class="voltartopo"><a href='#topo4'>VOLTAR AO TOPO DO SITE</a></p>
+
+								</div>
+
+								
+								</p>
+                            </div>
+                            <div id="pessoa5" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('5')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('4')">&lt;</span>
+                                    <span class="nome">Leandro Galuski</span>
+                                    <span class="proximo" onclick="proximo('6')">></span>
+									<span id='topo5'></span>
+                                </div>
+                                <div id="e5" class="embed-container"><div id="playerEntrevista5"></div></div>
+                                <p>
+								<div id="DivPopUp"> 
+									<p> </p>
+									<p> Descobrir uma doença rara e degenerativa nunca é fácil. Descobrir uma doença rara e degenerativa quando você tem 40 anos, é casado, tem duas filhas, sustenta a casa e trabalha com algo que ama – e que vai precisar parar de fazer – é mais difícil ainda. </p>
+									 
+									<p>Leandro Galuski recebeu o diagnóstico de adrenoneuromielopatia – a forma adulta da adrenoleucodistrofia – há dois anos. No começo, ele passou a sentir dificuldade para trabalhar com as máquinas pesadas que utilizava na Renault e também uma certa dificuldade para correr. Com o tempo, esse problema evoluiu e causou dificuldades para andar, sentar e levantar.</p>
+
+									<p class="declaracao"> “<span class="soundcite" data-id="459774036" data-start="0" data-end="40283" data-plays="1">Quando eu comecei a sentir os sintomas</span>, que começou a dificuldade, eu tava trabalhando na Renault. Eu trabalhava na parte da carroceria e fazia a solda do assoalho central. Então são pinças que pesam em torno de 80kg, mais ou menos, e tem o balancim que pra você não ficar suportando aquele peso,, então você só manuseava. Entrava com a pinça, fazia seu trabalho e puxava. E eu sentia que numa dessas eu puxava a pinça e quando o balancim ia pra trás, eu firmava a perna pra segurar a pinça e a pinça me levava pra trás. Eu dava dois passos pra trás” </p>
+									 
+									<p>Essa dificuldade no trabalho somada com uma dificuldade para correr atrás de um ônibus levaram Leandro a procurar ajuda médica. Como toda pessoa que procura um diagnóstico de adrenoleucodistrofia, ele precisou passar por diversos médicos. Um ortopedista, um neurologista, outros dois neurologistas e, por fim, mais um neurologista. O diferencial do caso do Leandro é que ele teve um primo, na infância, com a mesma doença. Daniel Galuski desenvolveu a fase infantil e mais agressiva da adrenoleucodistrofia.</p>
+
+									<div id="e5" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/U5M0rM1xtE8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									 
+									
+									<p> Foi o terceiro neurologista que conseguiu fazer o diagnóstico do Leandro. Depois de ficar internado no Hospital de Clínicas por 10 dias, ele finalmente foi chamado pelo médico e recebeu o diagnóstico: era adrenoleucodistrofia na fase adulta. O choque foi grande porque Leandro lembrou do caso do primo dele, mas ao mesmo tempo contou com um grande apoio da família </p>
+
+									<div id="e5" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/pdyuPavLnNc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+
+									<p>Mesmo sabendo qual era a doença que tinha, Leandro ainda não sabia muito bem o que fazer e o que pensar. Foi nesse momento que ele decidiu entrar em contato com a médica que atendeu seu primo há muito tempo atrás, a Dra. Mara Lúcia Schmitz. </p>
+
+									<p class="declaracao">“<span class="soundcite" data-id="459774033" data-start="0" data-end="31375" data-plays="1">Eu entrei em contato com ela, com a secretária dela.</span> Só que então ela é neuropediatra e eu já era adulto na época. Daí conversei com a secretaria e ela falou que só atendia criança. E eu deixei um recado assim: "Só fala pra ela que o primo do Daniel Galuski entrou em contato. É o Leandro Galuski, que tem o mesmo diagnóstico do Dani". Aí que, passou uns 15 minutos e ela me ligou "Leandro, eu quero te ver, eu quero ver como você está. Venha até o meu consultório agora"”.</p>
+									 
+									<p>A médica então explicou que quando a adrenoleucodistrofia afeta alguém na fase adulta ela é chamada de adrenomieloneuropatia. Ela não é tão agressiva quanto na fase infantil – continua sendo degenerativa e evoluindo com o tempo, mas tem um progresso mais lento. Um dos tratamentos que a médica já indicou foi o Óleo de Lorenzo, que serve para diminuir o ritmo da doença, combinado com uma dieta restritiva de gordura.</p>
+
+									<p class="declaracao">“<span class="soundcite" data-id="459774027" data-start="0" data-end="43079" data-plays="1">Então, a alimentação foi a primeira coisa que mudou</span> porque daí envolve a família inteira. Automaticamente fritura e gordura a gente não come. Pra mim por causa do problema e pra família porque já auxilia na saúde e em uma alimentação mais saudável. Carne, praticamente, é só patinho. Mas lógico que elas comem o iogurte delas, uma bolacha, um negócio. Eu procuro evitar. De vez em quando, se estou com vontade, eu como. Mas daí você já sabe que não vai te fazer bem e já diminui a vontade de comer.”</p>
+									 
+									 
+									<p> Além do cuidado especial com a alimentação, ele também precisa fazer um acompanhamento especial na fisioterapia e na hidroginástica. São duas sessões de cada exercício por semana. </p>
+									 
+									 
+									<p><h2>Família</h2></p>
+									 
+									<p>Como o Leandro mesmo definiu: “Família é complicado”. A esposa e as duas filhas quiseram saber de tudo e o apoiaram desde o primeiro momento. Porém, com a mãe e a irmã a história não foi bem assim. No começo, elas não queriam saber muito da doença – principalmente pela ligação com o caso do primo que elas viram sofrer muito. Só que foi inevitável, em certo ponto elas iam precisar entender e aceitar.</p>
+									 
+									<p class="declaracao">"<span class="soundcite" data-id="459774018" data-start="0" data-end="39396" data-plays="1">Chegou um momento que não teve como. Eu falei</span>  "Me afastaram do trabalho. A mesma doença que o Dani tinha eu tenho". E daí foi um baque, né. Porque as duas tem uma idade parecida e não aceitavam assim, não queriam. Ninguém quer, né? Na verdade todo mundo torce pelo normal, pelo cotidiano. Cresce, casa, tem a sua família. Tudo bem, trabalha, tudo tranquilo. Ninguém gosta de receber um diagnóstico de uma doença, mas ninguém tá livre, né. A gente não sabe o dia de amanhã, né. </p>
+									 
+									<p class="declaracao"> <b><span class="soundcite" data-id="459774015" data-start="0" data-end="24296" data-plays="1">A família é o que vem primeiro, a primeira coisa.</span> Se a sua família está te apoiando, pode acontecer o que acontecer no mundo que você chega em casa e pensa: "Nossa, eu tenho um lugar aqui onde eu sou amado, sou querido, que as pessoas torcem por mim”. Ajuda bastante. </b></p>
+									 
+									 
+									 
+									<p><h2>Mudanças</h2></p>
+									 
+									<p>A principal mudança foi a rotina. Antes de ter o problema, Leandro gostava de dirigir e sempre reunia toda a família, colocava dentro de um carro e saia para fazer uma viagem nova. Uma vez era para a praia, outra vez era a até então desconhecida Ponta Grossa. O programa familiar era ir até lá de carro, estacionar e conhecer os parques e praças das cidades a pé.</p>
+									 
+									<p class="declaracao">"<span class="soundcite" data-id="459774012" data-start="0" data-end="30670" data-plays="1">É o que ficou mais em evidência que eu parei de fazer</span>. Até uma época atrás eu ainda ia por causa das minhas filhas. Eu ia no shopping, ia na praia, então tinha que andar bastante. Era o que eu mais gostava de fazer.</p>
+									 
+									<p>Hoje em dia, as coisas são um pouco diferentes. Ele tem que pensar em programas onde não precise andar tanto. Precisa saber onde estacionar, se o lugar vai ter acessibilidade e lugares para descansar. Os portadores de ALD conseguem andar bem por cerca de 15, 20 minutos, dependendo do quadro. Depois disso, os músculos vão ficando duros e dificultam a caminhada. É nesse momento que eles precisam parar, respirar e descansar para poder continuar o passeio. </p>
+
+									<div id="e5" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/XhHr8ETtH-k?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									 
+									<p>Com isso, também veio a aposentadoria por invalidez. Leandro ficou afastado por algum tempo do trabalho e uma perícia do INSS fez com que ele saísse definitivamente do trabalho.</p>
+									 
+									<p class="declaracao"> “<span class="soundcite" data-id="459774009" data-start="0" data-end="23747" data-plays="1">Eu fiz a perícia no INSS e a atendente foi até - como que eu vou dizer</span> -, eles são um pouco rudes. Ela falou "Ó Leandro, se você tinha esperança em voltar a trabalhar pode esquecer porque voltar a trabalhar você nunca mais vai conseguir. Nessa doença aqui é daqui pra pior e daqui a pouco você tá numa cama, então vou te aposentar". Na época eu nem queria me aposentar porque eu preciso do plano de saúde, porque eu faço ressonâncias, tem uma série de exames que eu faço anual pra saber como está o meu organismo e se de repente eu me aposentar e for mandado embora da Renault eu vou precisar do plano. Então eu não queria, eu falei que não queria me aposentar. Ela falou "Não, mas isso ai não cabe a você." E eu falei "Ok, tudo bem, haha". E aí me aposentaram por invalidez.”</p>
+									 
+									<p>Desde que se aposentou, ele tenta ocupar os dias com atividades diferentes. Na terça e na quinta tem hidroginástica e na quarta e na sexta tem fisioterapia. Porém, nos intervalos de tudo isso, ele procura sempre encaixar diversos compromissos – ir ao mercado, ir ao banco, resolver os problemas de casa e virar motorista da sua esposa e das duas filhas para onde quer que seja.</p>
+									 
+									<p>Ele também ajuda muito a Linda Franco na entrega de doações para outras mães especiais. E, para isso, ele também utiliza o carro – sua paixão desde o tempo de infância. Já que as pernas complicam o andar, o carro é uma espécie de carta de liberdade. </p>
+									 
+									 
+									<div id="e5" class="embed-container"><iframe width="640" height="390" src="https://www.youtube.com/embed/sjZpF8K6t7o?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+									<p> </p>
+									
+									<p class="voltartopo"><a href='#topo5'>VOLTAR AO TOPO DO SITE</a></p>
+
+								</div>
+
+                                </p>
+                            </div>
+                            <div id="pessoa6" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('6')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('5')">&lt;</span>
+                                    <span class="nome">Patrícia, Carlos e Henrique</span>
+                                    <span class="proximo" onclick="proximo('7')">&gt;</span>
+									<span id='topo6'></span>
+                                </div>
+                                <div id="e6" class="embed-container"><div id="playerEntrevista6"></div></div>
+                                <div id="DivPopUp">
+									<p> </p>
+									<p> A doce felicidade da vitória. Essa é a frase que resume a vida de Henrique Studart. Ele foi diagnosticado com adrenoleucodistrofia aos 14 anos, em 1998. Mas o que poderia se tornar uma história triste mudou rapidamente graças a um transplante de medula óssea. Henrique se curou da doença e hoje em dia, já com seus 34 anos, é artista plástico e tem duas empresas. Esse é um exemplo prático de como uma criança com o diagnóstico precoce de adrenoleucodistrofia pode se curar e viver uma vida normal. </p>
+
+									<p>Apesar da descoberta da doença acontecer aos 14, os sintomas começaram muito antes. De acordo com Patrícia Studart, mãe do Henrique, aos 7 anos ele teve uma mudança grande no comportamento e passou a ficar muito agitado. Depois de um tempo, começou a ter dificuldades de aprendizado dentro da escola.</p>
+
+									<p class="declaracao">
+									Patrícia Studart: “<span class="soundcite" data-id="461417967" data-start="0" data-end="38717" data-plays="1">Depois, quando ele já estava na escola</span>, na 2º série depois de ter sido alfabetizado, ele começou a apresentar dificuldades, principalmente na matemática. E uma criança de 2ª série, com professor particular, hoje eu sei que não é comum. Uma criança que precisa de professor particular, de um reforço, na 2ª série? Isso já é um sintoma.” </p>
+
+									<p>Já com 12 anos, Henrique saiu para fazer um passeio de cavalo na fazenda dos avós. Quando retornou, estava ardendo de febre. Tomou diversos anti-térmicos, mas nada melhorava. Foi levado para o hospital e precisou ficou internado na UTI por várias semanas.</p>
+										
+									<p class="declaracao">
+									Patrícia Studart: “<span class="soundcite" data-id="461417958" data-start="0" data-end="15988" data-plays="1">Hoje eu digo a você: Henrique </span>estava tendo uma crise de Addison, de insuficiência da adrenal. Não é que ele não teve a febre, ele teve a febre, alguma virose desencadeou isso lá. Só que a gente não sabia” </p>
+									 
+									<p>A adrenoleucodistrofia causa problemas em duas partes do corpo. Pode afetar a substância branca do cérebro e fazer com que a criança tenha mudanças no comportamento, problemas na fala, para andar, entre outros. Pode também afetar as glândulas suprarrenais, localizadas acima dos nossos rins, e que produzem hormônios essenciais para nossa sobrevivência. Se essas glândulas deixarem de funcionar, o paciente precisa repor esses hormônios de maneira artificial durante a vida toda.</p>
+
+									<p>O não funcionamento dessa estrutura é chamado de Doença de Addison. Porém, mesmo com essa crise, os médicos não conseguiram chegar no diagnóstico de adrenoleucodistrofia.</p>
+									<div id="e6" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/pJ089oYl4zo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									<p>Quem começou a ligar os pontos entre a crise da suprarrenal, a mudança de comportamento e as dificuldades na escola foi um primo de Patrícia, médico endocrinologista. Ele pediu uma ressonância magnética do cérebro e, quando o resultado chegou, já encaminhou Henrique para outros especialistas em São Paulo. </p>
+									<p>Chegando lá, fizeram o exame de sangue que detecta os ácidos graxos de cadeia muita longa – gorduras que se acumulam nas células e no sangue de quem tem adrenoleucodistrofia. Mais uma vez, o exame veio positivo. </p>
+
+									<p class="declaracao">
+									Patrícia Studart: “<span class="soundcite" data-id="461417982" data-start="0" data-end="10475" data-plays="1">E foi aí que eu senti como</span> se o chão tivesse caído. Era como se tivesse abrido uma vala nos pés da gente. E aí começou a nossa sina. </p> 
+									 
+									<p> <img src="imgs/salvador/familia1.jpg" alt="Patricia, Carlos e Henrique" class="imagemhistoria"></p>
+									 
+									<p><h2>A busca pelo tratamento</h2></p>
+									<p>Logo depois de receber o diagnóstico, a família inteira reuniu esforços para buscar o “Óleo de Lorenzo”. Esse composto foi criado por Augusto e Michaela Odone, pais do pequeno Lorenzo, nos anos 80. Atualmente, já se sabe que ele não cura a doença – apenas retarda os sintomas. Na época, ele era tido a única opção de tratamento.</p>
+									<p>O medicamento era importado de Portugal e cada frasco, que durava uma semana, custava mais de R$ 1 mil. A família precisou de várias reuniões com o Ministério da Saúde e com a Secretária de Saúde da Bahia para conseguir que o Estado pagasse o medicamento.</p>
+									<p>Nesse tempo, Henrique fazia várias ressonâncias magnéticas para acompanhar a progressão a doença. Mesmo tomando o óleo da maneira correta, a doença continuou evoluindo. Nesse momento, o médico sugeriu que ele buscasse tratamento fora do país.</p>
+									<p><h2>Transplante</h2></p>
+									<p>O único país que realizava o transplante para medula óssea – ainda em fase inicial – era os Estados Unidos. Os médicos brasileiros entraram em contato com os médicos norte-americanos e acertaram tudo.</p>
+									<p>O grande problema é que nenhum familiar podia fazer a doação porque não eram compatíveis. Henrique precisou entrar na fila internacional de medulas e rezar por um milagre – a chance de encontrar um doador compatível é de 1 para 100 mil pessoas. Outro problema: o transplante custava, na época, mais de 500 mil reais. </p>
+									<p> <img src="imgs/salvador/familia3.jpg" alt="Patricia, Carlos e Henrique" class="imagemhistoria"></p>
+									 
+									<p>Porém, tudo foi resolvido de maneira muito rápida. A família conseguiu entrar com um recurso junto ao plano de saúde e o plano pagou todo o tratamento de Henrique nos Estados Unidos.   	</p>
+
+
+									<p class="declaracao">Patrícia Studart: “<span class="soundcite" data-id="461417976" data-start="0" data-end="22728" data-plays="1">Em cima desses casos de excepcionalidade</span>, a gente conseguiu fazer o transplante fora. O doador veio com muita rapidez, em 2 meses ele me mandaram o e-mail dizendo que conseguiram um doador para o Henrique com 100%, que eles chamam de “6 por 6”. O que é muito raro.” </p>
+
+									 
+									<p>O transplante foi feito no dia 26 de janeiro de 2000. Esse tratamento é muito perigoso porque o paciente pode ter diversas complicações, além de infecções por vírus e bactérias porque ficam com a imunidade muito baixa. Porém, nada disso acontece com ele.</p>
+									 
+									<div id="e6" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/h2lA2DaC6Kc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									<p>Foram mais 180 dias nos Estados Unidos até receber alta e poder retornar ao Brasil. Nesse período, a família inteira ficou alojada na Casa de Apoio Ronald McDonald, de forma totalmente gratuita. Eles também contavam com apoio de tradutores, psicólogos e várias especialidades médicas.</p>
+									<p> <img src="imgs/salvador/transplante.JPG" alt="Henrique fazendo transplante nos EUA" class="imagemhistoria"></p>
+									 
+									<p><h2>Vida depois do transplante</h2></p>
+									<p>A vida depois de um transplante de medula óssea é complicada. Por pelo menos um ano, o paciente transplantado não pode sair de casa porque o sistema imunológico ainda está comprometido.</p>
+									<p>Depois de comprovado que o transplante deu certo e que a adrenoleucodistrofia parou de evoluir, eles puderam comemorar que o tratamento funcionou. Como mostrado na seção <a href="fatos.html">que explica a doença</a></li>, o transplante só consegue parar a doença – ele não recupera os danos que já foram causados no cérebro.</p>
+									<p>Henrique teve alguns pequenos danos na parte frontal do cérebro. Isso causa dificuldades em algumas atividades com diversas etapas – ele precisa receber ordens claras do que fazer. Porém, independente disso, ele vive uma vida normal – até foi casado durante 5 anos. Ele tem uma vida totalmente independente e até tem carteira para dirigir. </p>
+
+									<div id="e6" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/j3NiVCcvuiI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+
+									<p>Sua atividade principal é a pintura. Ele é um artista plástico conhecido em Salvador, já vendeu diversos quadros e expôs até na Assembleia Legislativa da Bahia. Além disso, já trabalhou na parte administrativa de diversas empresas do ramo da construção. Atualmente, ele é sócio de duas empresas: uma de fotografia e outra de construção com eucaliptos. </p>
+									<p><h2>Fé</h2></p>
+									<p>A fé sempre esteve presente na vida da família Studart. E não é uma fé no sentido religioso da palavra. Todos os integrantes, principalmente Henrique, sempre acreditaram piamente na cura.</p>
+									<p>A religião também ajudou a passar por essa fase difícil. Carlos, o pai de Henrique, é devoto do Senhor do Bonfim e ia toda semana até a Igreja do Senhor do Bonfim para rezar e pedir a cura do filho. </p>
+									<div id="e6" class="embed-container"><p><iframe width="640" height="390" src="https://www.youtube.com/embed/i80BVnlqlnY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p></div>
+									<p>Henrique, por outro lado, era devoto da Irmã Dulce – uma freira que fez diversos projetos de caridade na Bahia e virou santa. Ele depositava sua fé nela e em um travesseiro feito com uma parte do colchão da santa.</p>
+									<p><h2>A doce felicidade da vitória</h2></p>
+									Henrique é um exemplo de como o diagnóstico precoce pode salvar uma vida. Se não fosse pela descoberta da doença antes das lesões graves começarem, Henrique não conseguiria fazer o transplante e não teria uma vida independente como a que ele possui hoje.
+									Toda essa história é contada em um livro chamado “A doce felicidade da vitória”. A obra reúne todos os e-mails trocados pela família durante o período do transplante e conta, com diversos detalhes, a vida de Henrique, Patrícia e Carlos. O livro pode ser adquirido <a href="https://www.clubedeautores.com.br/book/148116--A_doce_felicidade_da_vitoria#.WyutMKdKjDc"> aqui</a></li>. 
+
+									<p> <img src="imgs/salvador/familia2.jpg" alt="Patricia, Carlos e Henrique" class="imagemhistoria"></p>
+									
+									<p> </p>
+									
+									<p class="voltartopo"><a href='#topo6'>VOLTAR AO TOPO DO SITE</a></p>
+
+								</div>
+
+                            </div>
+                            <div id="pessoa7" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('7')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('6')">&lt;</span>
+                                    <span class="nome">Em breve</span>
+                                    <span class="proximo" onclick="proximo('8')">&gt;</span>
+                                </div>
+                                <div id="e7" class="embed-container"><div id="playerEntrevista7"></div></div>
+                                <p>
+                                    Em breve. Essa história ainda está em construção.
+                                </p>
+                            </div>
+                            <div id="pessoa8" class="modal-content">
+                                <span class="close" onclick="fechaPopUp('8')">&times;</span>
+                                <div class="comandosNome">
+                                    <span class="anterior" onclick="anterior('7')">&lt;</span>
+                                    <span class="nome">Em breve</span>
+                                    <span class="proximo" onclick="proximo('1')">&gt;</span>
+                                </div>
+                                <div id="e8" class="embed-container"><div id="playerEntrevista8"></div></div>
+                                <p>
+                                    Em breve. Essa história ainda está em construção.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </main>
+
+                
+
+                <footer>
+                    <address>
+                        Depois de Lorenzo. Desenvolvido em 2017/18.
+                    </address>
+                </footer>
+                <audio controls autoplay id="audio">
+                    <source src="intro.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+
+        </div>
+    </body>
+</html>

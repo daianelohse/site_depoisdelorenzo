@@ -1,0 +1,238 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/02/2018, 15:26:20
+    Author     : Daiane
+*/
+
+.img > div {
+    height: auto;
+}
+
+#site {
+    display: none;
+}
+
+
+.img  {
+    background-color: white;
+    width: 100%;
+    /*max-width: 914px;*/
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+div.img{
+    position: relative; 
+}
+
+div.img > div{
+    width:33%; 
+    height: 100%
+}
+
+div.img > span{
+    display: none;
+    position: absolute; 
+    text-align: center;  
+    margin-left: 0 auto; 
+    bottom: 2%; 
+    left: 1px; 
+    right: 1px; 
+    background-color: black; 
+    width:100%; 
+    color: #FFF;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.img:hover span, .img:hover {
+    display: block;
+}
+
+.img:hover {
+    cursor: pointer;
+
+}
+
+#imgInicio1:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor1.png');
+}
+
+#imgInicio2:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor2.png');
+}
+
+#imgInicio3:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor3.png');
+}
+
+#imgInicio4:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor4.png');
+}
+
+#imgInicio5:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor5.png');
+}
+
+#imgInicio6:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor6.png');
+}
+
+#imgInicio7:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor0.png');
+}
+
+#imgInicio8:hover {
+    background-image: url('../imgs/entrevistadosInicio/quadrado_cor0.png');
+}
+
+
+#imgInicio1 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado1.png');
+}
+
+#imgInicio2 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado2.png');
+}
+
+#imgInicio3 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado3.png');
+}
+
+#imgInicio4 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado4.png');
+}
+
+#imgInicio5 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado5.png');
+}
+
+#imgInicio6 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado6.png');
+}
+
+#imgInicio7 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado0.png');
+}
+
+#imgInicio8 {
+    background-image: url('../imgs/entrevistadosInicio/quadrado0.png');
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;   
+    z-index: 1; /* Sit on top */
+    width: 100%; /* Full width */
+    top: 0.1%;
+    bottom: 0.1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    padding-bottom: 2%;
+    font-family: "Brandon Text";
+    font-size: 1.3em;
+    color: #424242;
+}
+
+.nome {
+   letter-spacing: 0.2em;
+   font-weight: bolder;
+}
+
+/* Modal Content */
+.modal-content {
+    max-height: 90vh;  /* Change this value according to your needs */
+    overflow: auto;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 2%;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    display: none; /* Hidden by default */
+    overflow-y: auto;     
+}
+
+.modal-content p {
+    padding-bottom: 5%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.proximo, .anterior {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 4%;
+}
+
+.proximo:hover, .anterior:hover {
+    cursor: pointer;
+}
+
+.comandosNome {
+    text-align: center;
+}
+
+#fotoPrincipal {
+    background-image: url('../imgs/foto-bg.png');
+    width: 100%;
+    max-height: 649px; 
+    height: auto;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fotoPrincipal p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Brandon Text";
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+    color: #2e2d2d;
+
+    display: block;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+#fotoPrincipal img {
+    width: 833px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+#citacaoInicio {
+    font-style: italic;
+    font-family: "Brandon Text";
+    margin: 12%;
+    font-size: 1.3em;
+    text-align: center;
+}

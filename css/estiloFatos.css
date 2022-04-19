@@ -1,0 +1,164 @@
+/* 
+    Created on : 13/02/2018, 15:26:33
+    Author     : Daiane Alícia Lohse
+*/
+
+#ceDocumentario div, #dadosDocumentario a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #424242;
+}
+
+#dadosDocumentario {
+    margin-top: -2%;
+}
+
+#dadosDocumentario a:hover {
+    opacity: 0.5;
+}
+
+#descricoesDados div {
+    display: none;
+}
+
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.item6 { grid-area: header; }
+.item7 { grid-area: right; }
+.item8 { grid-area: menu; }
+.item9 { grid-area: main; }
+.item10 { grid-area: footer; }
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+        'header header header right right right'
+        'menu main main main footer footer';
+    grid-gap: no;
+    background-color: #ffffff;
+    font-family: "Brandon Text";
+}
+
+.grid-container2 > div {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    grid-gap: no;
+    background-color: #ffffff;
+    font-family: "Brandon Text";
+}
+
+.grid-container > div {
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#fato3 {
+    background-color: #eaeaea;
+}
+
+#fotoFato2 {
+    background-image: url('../imgs/fatos/fatos2.png');
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tituloFatos {
+    background-color: #eaeaea;
+    width: 100%;
+    margin-top:0;
+    color: #b3a89d;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: "Brandon Text";
+
+}
+
+#fotoFato1 {
+    background-image: url('../imgs/fatos/fatos1.png');
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+
+}
+
+#fotoFato2 a{
+    color: #ffffff !important;
+}
+
+#fotoFato7 {
+    background-image: url('../imgs/fatos/fatos3.png');
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+#fotoFato8 {
+    background-image: url('../imgs/fatos/fatos4.png');
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+#fotoFato9 {
+    background-image: url('../imgs/fatos/fatos5.png');
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+#fotoFato9 a {
+    color: #ffffff !important;
+}
+
+#descricoesDados {
+    margin: 0 auto;
+}
+
+#descricoesDados {
+    font-family: "Brandon Text";
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: #424242;
+}
+
+#descricoesDados h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
