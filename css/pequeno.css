@@ -1,3 +1,9 @@
 .centralizar {
     width:780px;
 }
+
+.centralizar li {
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+}

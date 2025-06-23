@@ -4,23 +4,24 @@ var playerEntrevista;
 var entrevistas = ['', '2i9CybLHC2g', 'J29176wl4uU', '0gGykirDLJo', 'x1JskAHD_34', '8lKPJ9_wZTI', 'DdXNCUYWt28', 'XXXXXXX', 'XXXXXX'];
 
 function onYouTubePlayerAPIReady() {
-    if (sessionStorage.getItem("sessao") == "1") {
-        $("#site").show();
+   // if (sessionStorage.getItem("sessao") == "1") {
+   //     $("#site").show();
         document.getElementById('audio').play();
-        $("#popUpIntro").hide();
-    } else {
-        $("#popUpIntro").show();
-    player = new YT.Player('player', {
-        width: '640',
-        height: '390',
-        videoId: 'wcRO50T89uY',
-        events: {
-            onReady: onPlayerReady,
-            onStateChange: onPlayerStateChange
-        }
-    });
-    }
-}
+       // $("#popUpIntro").hide();
+  //  } else {
+    //    return false;
+      //  $("#popUpIntro").show();
+   // player = new YT.Player('player', {
+      //  width: '640',
+       // height: '390',
+       // videoId: 'wcRO50T89uY',
+      //  events: {
+       //     onReady: onPlayerReady,
+   //         onStateChange: onPlayerStateChange
+    
+    };
+    
+
 
 // autoplay video
 function onPlayerReady(event) {
