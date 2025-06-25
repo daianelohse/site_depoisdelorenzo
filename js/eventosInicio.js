@@ -114,7 +114,7 @@ $(function () {
     setInterval(function () {
         switch (texto) {
             case 1:
-                string = "O Theo abaixou meu óculos, olhou pra mim e falou: 'Ás vezes eu fico me perguntando se fui eu que nasci de você ou se foi você que nasceu de mim'. (Laura Pinheiro)";
+                string = "O Theo abaixou meu óculos, olhou pra mim e falou: 'Às vezes eu fico me perguntando se fui eu que nasci de você ou se foi você que nasceu de mim'. (Laura Pinheiro)";
                 break;
             case 2:
                 string = "A família é o que vem primeiro, a primeira coisa. Se a sua família está te apoiando, pode acontecer o que acontecer no mundo que você chega em casa e pensa: 'Nossa, eu tenho um lugar aqui onde eu sou amado, sou querido, as pessoas torcem por mim'. Ajuda bastante. (Leandro Galuski)";
@@ -124,8 +124,11 @@ $(function () {
                 break;
         }
 
-        $('.texto').html(string);
+        // Aplica fadeOut, troca o texto e aplica fadeIn
+        $('.texto').fadeOut(900, function () {
+            $(this).html(string).fadeIn(900);
+        });
 
-        texto != 3 ? texto++ : texto = 1;
+        texto = texto !== 3 ? texto + 1 : 1;
     }, 10000);
 });
